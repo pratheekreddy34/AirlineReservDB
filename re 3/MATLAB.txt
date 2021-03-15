@@ -1,0 +1,80 @@
+z=p-p0/sqrt(p0*q0/n)
+
+
+xbar=14.6
+mu0=15.4
+sigma=2.5
+n=35
+z=(xbar-mu0)/(sigma/sqrt(n))
+z
+
+alpha=0.05
+zhalfalpha=qnorm(1-(alpha/2))
+c(-zhalfalpha,zhalfalpha)
+
+pval=2*pnorm(z)
+pval
+
+
+
+
+p=85/148
+p0=60/100
+n=148
+q0=1-p0
+z=(p-p0)/sqrt(p0*q0/n)
+z
+
+alpha=0.05
+zalpha=qnorm(1-alpha)
+-zalpha
+
+pval=pnorm(z)
+pval
+
+
+
+p=30/214
+p0=12/100
+q0=1-p0
+n=214
+z=(p-p0)/sqrt(p0*q0/n)
+z
+
+alpha=0.05
+zalpha=qnorm(1-alpha)
+zalpha
+
+pval=pnorm(z,lower.tail=FALSE)
+pval
+
+
+
+
+
+p=12/30
+p0=1/2
+q0=1-p0
+z=(p-p0)/sqrt(p0*q0/n)
+z
+alpha=0.05
+zhalfalpha=qnorm(1-(alpha/2))
+c(-zhalfalpha,zhalfalpha)
+
+pval=2*pnorm(z,lower.tail=FALSE)
+pval
+
+
+[1] -1.893146
+[1] -1.959964  1.959964
+[1] 0.05833852
+[1] -0.6375983
+[1] -1.644854
+[1] 0.2618676
+[1] 0.908751
+[1] 1.644854
+[1] 0.1817408
+[1] -2.925748
+[1] -1.959964  1.959964
+[1] 1.996564
+
